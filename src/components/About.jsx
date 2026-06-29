@@ -12,15 +12,15 @@ function About()  {
     <div className="feature">
     <h2>Fast Approval</h2>
     <p>Get decisions in minutes, not weeks</p>
-         </div>
+     </div>
     <div className="feature">
     <h2>No hidden Fees</h2>
     <p>100% free to aply - no hidden charges</p>
-         </div>
+     </div>
     <div className="feature">
     <h2>Secure & Private</h2>
     <p>Your data is encrypted and never shared </p>
-         </div>
+     </div>
   </div>
         </div>
         </div>
