@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  color: white; 
+  padding: 12px 20px;
+  margin-bottom: 40px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  color: purple;
+  margin: 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-links .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-links a,
+.navbar-links .nav-button {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  color: purple;
+}
+
+.nav-button {
+  background: blue;
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background: darkblue;
+}
