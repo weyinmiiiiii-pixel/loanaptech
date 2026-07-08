@@ -45,4 +45,4 @@ catch (error) {
 }
 };
 
-module.exports = mongoose.model('User', userSchema);m ,
+module.exports = mongoose.model('User', userSchema);
