@@ -26,7 +26,7 @@ app.use('/api/loans', require('./routes/loans'));
 
 // Test route
 app.get('/api/test', (req, res) => {
-  res.json({ message: 'APgiI is working!' });
+  res.json({ message: 'API is working!' });
 });
 
 const PORT = process.env.PORT || 5000;
