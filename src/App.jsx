@@ -7,6 +7,7 @@ import Signup from "./components/Signup";
 import Apply from "./Pages/Apply";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Dashboard from "./Pages/Dashboard";
 function App(){
   return(
     <Router>
@@ -19,8 +20,7 @@ function App(){
        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/apply" element={<Apply/>}/>
-        {/*<Route path="/loan-status" element={<LoanStatus/>}/> */}
-       {/*<Route path="/loans" element={<Loans/>}/> */}
+        <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
         <Footer/>
       </div>
