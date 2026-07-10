@@ -1,11 +1,11 @@
 import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"; import About from "./components/About";
 import Home from "./Pages/Home";
+import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import Contact from "./components/Contact";
 import Signup from "./components/Signup";
 import Apply from "./Pages/Apply";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Dashboard from "./Pages/Dashboard";
 function App(){
