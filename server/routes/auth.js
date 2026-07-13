@@ -54,6 +54,7 @@ router.post('/register', async (req, res) => {
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
+
     if (!email || !password) {
       return res.status(400).json({ error: 'Please provide email and password' });
     }
@@ -75,8 +76,8 @@ router.post('/login', async (req, res) => {
     // Set HTTP-only cookie
     res.cookie('token', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'strict',
+      secure: true,
+      sameSite: 'none',
       maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
     });
 
@@ -95,6 +96,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
+
 router.get('/me', auth, async (req, res) => {
   res.json({ success: true, user: req.user });
 });
@@ -102,6 +104,8 @@ router.get('/me', auth, async (req, res) => {
 router.post('/logout', (req, res) => {
   res.cookie('token', '', {
     httpOnly: true,
+     secure: true,        
+    sameSite: 'none',
     expires: new Date(0)
   });
   res.json({ success: true, message: 'Logged out successfully' });
