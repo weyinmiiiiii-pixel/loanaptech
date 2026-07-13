@@ -95,7 +95,6 @@ router.post('/login', async (req, res) => {
   }
 });
 
-
 router.get('/me', auth, async (req, res) => {
   res.json({ success: true, user: req.user });
 });

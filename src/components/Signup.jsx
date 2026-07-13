@@ -11,6 +11,7 @@ const Signup = () => {
     password: "",
     confirmPassword: ""
   });
+
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
