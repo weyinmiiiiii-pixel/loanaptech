@@ -36,7 +36,7 @@ function Navbar() {
 
   const handleLogout = async () => {
   try {
-    const res = await fetch("https://loanaptech-ijz6.onrender.com/api/auth/logout", {
+    const res = await fetch("https://loanaptech-ax75.onrender.com/api/auth/logout", {
       method: "POST",
       credentials: "include",
     });
