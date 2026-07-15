@@ -1,51 +1,84 @@
- .apply{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.apply-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.apply-container{
-    max-width: 600px;
-    width: 100%;
-    background-color:aliceblue;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.apply-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
 }
-.apply-container h1{
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color:black;
+
+.apply-title {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #1e293b;
+  margin-bottom: 40px;
+  font-weight: 700;
 }
-.apply-form{
-    display:flex;
-    flex-direction:column
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.apply-form label{
-    display: flex;
-    color:black;
-    justify-content: flex-start;
+
+.input-group {
+  display: flex;
+  flex-direction: column;
 }
-.apply-form input,
-.apply-form textarea{
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    width: 100%;
+
+.input-group label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
 }
-.apply-form button{
-    padding: 10px;
-    background-color:blue;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    margin: auto;
-    cursor: pointer;
-    font-size: 1rem;
-    width: 70%;
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 14px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s;
+  background-color: #fafafa;
 }
-.apply-form button:hover{
-    background-color:blue;
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.apply-submit-btn {
+  margin-top: 20px;
+  padding: 18px;
+  background: #4f46e5;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.apply-submit-btn:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
 }
