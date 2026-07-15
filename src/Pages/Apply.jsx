@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './ApplyLoan.css';  
+import './Apply.css';  
 
 function Apply () {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ function Apply () {
 
     try {
 
-      const res = await fetch("https://loanaptech-ax75.onrender.com/api/loans/apply", {
+      const res = await fetch("https://loanaptech-vh3d.onrender.com/api/loans/apply", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
